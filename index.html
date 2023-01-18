@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess</title>
+    
+    
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            background-color:rgba(132, 187, 206, 0.89)
+        }
+        h1 {
+            background-color: black;
+            color: white; 
+            text-align: center;
+            border-radius: 300px; 
+            width: 50%; 
+            margin-left: 270px;  
+            padding-bottom: 30px; 
+            padding-top: 30px;
+            font-size: 80px;
+            font-style: italic;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            
+
+        }
+        h1:hover {
+            color:rgba(0, 102, 255, 0.514);
+            box-shadow: 30px 30px 30px rgba(255, 255, 255, 0.726);
+        }
+
+        table tr td {
+            height: 50px ;
+            width: 80px;
+            border: 20px auto;
+            border-color: black;
+            background-color:black;
+            color: white;
+            text-align: center;
+            background: -o-linear-gradient(#444,#555),#666;
+            padding: 20px 20px 10px 10px;
+            border-radius: 5px;
+        }
+        table tr td:hover{
+            background-color: rgba(112, 128, 144, 0.836);
+            color: rgba(0, 0, 255, 0.719);
+        }
+        table{
+            margin: 100px;
+            width: 80%;
+            display: flex;
+            border: 5px solid black;
+            border-radius: 10px;
+            font-size: 40px;
+        }
+        table:hover {
+            box-shadow:20px 20px 20px 20px white;
+            
+        }
+        #col :nth-child(odd) {
+            background-color: white;
+            color:black;
+            padding: 10px 15px;
+            font-size:40px;
+            border: 3px solid black;
+            border-radius: 5px;
+            
+            
+        }
+        #col :nth-child(odd):hover{
+            background-color: rgba(112, 128, 144, 0.836);
+            color:rgba(0, 0, 255, 0.719);
+
+
+        }
+
+        #col2 :nth-child(even) {
+            background-color:white;
+            color: black;
+            padding: 10px 15px;
+            font-size: 40px;
+            border: 3px solid black;
+            border-radius: 5px;
+            
+        }
+        #col2 :nth-child(even):hover{
+            background-color: rgba(112, 128, 144, 0.836);
+            color:rgba(0, 0, 255, 0.719);
+        }
+    </style>
+</head>
+<body>
+    
+    <table>
+        <h1>Chess Board</h1>
+        <tr id="col">
+            <td>&#9814</td>
+            <td>&#9816</td>
+            <td>&#9815</td>
+            <td>&#9812</td>
+            <td>&#9813</td>
+            <td>&#9815</td>
+            <td>&#9816</td>
+            <td>&#9814</td>
+        </tr>
+        <tr id="col2" >
+            <td>&#9817</td>
+            <td>&#9817</td>
+            <td>&#9817</td>
+            <td>&#9817</td>
+            <td>&#9817</td>
+            <td>&#9817</td>
+            <td>&#9817</td>
+            <td>&#9817</td>
+        </tr>
+        <tr id="col"  >
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr id="col2" >
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr id="col" >
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr id="col2" >
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr id="col" >
+            <td>&#9823</td>
+            <td>&#9823</td>
+            <td>&#9823</td>
+            <td>&#9823</td>
+            <td>&#9823</td>
+            <td>&#9823</td>
+            <td>&#9823</td>
+            <td>&#9823</td>
+        </tr>
+        <tr id="col2" >
+            <td>&#9820</td>
+            <td>&#9822</td>
+            <td>&#9821</td>
+            <td>&#9818</td>
+            <td>&#9819</td>
+            <td>&#9821</td>
+            <td>&#9822</td>
+            <td>&#9820</td>
+        </tr>
+    </table>
+</body>
+</html>
